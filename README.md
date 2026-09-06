@@ -9,6 +9,28 @@
 
 ---
 
+<!-- QUICK NAVIGATION -->
+<p align="center">
+  <a href="#-english">🇬🇧 English</a> •
+  <a href="#-українська">🇺🇦 Українська</a> •
+  <a href="#hardware">🔧 Hardware</a> •
+  <a href="#wiring-schematics">🔌 Schematics</a> •
+  <a href="#required-libraries">📚 Libraries</a> •
+  <a href="#installing-the-arduino-ide">💻 Installation</a> •
+  <a href="#setting-the-clock-in-the-code">🕐 Clock Setup</a> •
+  <a href="#setting-the-clock-using-buttons">🎛️ Buttons</a> •
+  <a href="#alarm">⏰ Alarm</a> •
+  <a href="#troubleshooting">🛠️ Troubleshooting</a>
+</p>
+
+<p align="center">
+  <a href="#-english">🇬🇧 English Guide</a>
+  &nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="#-українська">🇺🇦 Українська Інструкція</a>
+</p>
+
+---
+
 ## 🇬🇧 English
 
 ### Overview
@@ -33,6 +55,7 @@ The project provides:
 
 ---
 
+<a id="hardware"></a>
 ## Hardware
 
 The exact component-to-pin wiring should be documented in the project schematics.
@@ -62,6 +85,7 @@ The I2C pins depend on the Arduino board. On common Arduino boards such as the U
 
 ---
 
+<a id="wiring-schematics"></a>
 # Wiring Schematics
 
 ## Schematic 1 — Main Clock Circuit
@@ -120,6 +144,7 @@ Describe:
 
 ---
 
+<a id="required-libraries"></a>
 # Required Libraries
 
 The sketch includes the following libraries:
@@ -186,6 +211,7 @@ It is normally included with the Arduino AVR core and does not require a separat
 
 ---
 
+<a id="installing-the-arduino-ide"></a>
 # Installing the Arduino IDE
 
 1. Install the Arduino IDE.
@@ -304,6 +330,7 @@ Change the address only if your LCD module uses a different I2C address.
 
 ---
 
+<a id="setting-the-clock-in-the-code"></a>
 # Setting the Clock in the Code
 
 The clock is normally set using the buttons. However, the DS3231 can also be initialized directly from the sketch.
@@ -353,6 +380,7 @@ For normal operation, it is recommended to set the time through the button menu.
 
 ---
 
+<a id="setting-the-clock-using-buttons"></a>
 # Setting the Clock Using Buttons
 
 The clock has three buttons:
@@ -494,6 +522,7 @@ The clock date and time are stored directly in the DS3231 RTC.
 
 ---
 
+<a id="alarm"></a>
 # Alarm
 
 The alarm can be enabled or disabled from the settings menu.
@@ -631,6 +660,7 @@ Change these values if your wiring is different.
 
 ---
 
+<a id="troubleshooting"></a>
 # Troubleshooting
 
 ### LCD does not display text
