@@ -697,20 +697,6 @@ Check:
 
 ---
 
-# Project Structure
-
-Recommended repository structure:
-
-```text
-Arduino-based-clock/
-├── sbudilnikom.ino
-├── README.md
-└── docs/
-    └── schematic-main.png
-```
-
----
-
 # License
 ```text
 MIT License
@@ -1196,21 +1182,6 @@ if (DateTime.hour >= 0 && DateTime.hour < 6) {
     lcd.backlight();
 }
 ```
-
----
-
-# Структура репозиторію
-
-Рекомендована структура GitHub-репозиторію:
-
-```text
-Arduino-based-clock/
-├── sbudilnikom.ino
-├── README.md
-└── docs/
-    └── schematic-main.png
-```
-
 ---
 
 # License / Ліцензія
