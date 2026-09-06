@@ -89,7 +89,7 @@ The I2C pins depend on the Arduino board. On common Arduino boards such as the U
 
 ## Main Clock Circuit
 
-> **Insert the wiring diagram here:** `docs/schematic-main.png`
+![shematic1](docs/schematic-main.png)
 
 ### Component connection description
 
@@ -706,18 +706,12 @@ Arduino-based-clock/
 ├── sbudilnikom.ino
 ├── README.md
 └── docs/
-    ├── schematic-main.png
-    └── schematic-detailed.png
+    └── schematic-main.png
 ```
 
 ---
 
 # License
-
-Add your preferred license here.
-
-Example:
-
 ```text
 MIT License
 ```
@@ -782,7 +776,7 @@ A5 → SCL
 
 ## Основна схема годинника
 
-> **Вставити схему підключення сюди:** `docs/schematic-main.png`
+![shematic2](docs/schematic-main.png)
 
 ### Опис підключення
 
@@ -1214,18 +1208,12 @@ Arduino-based-clock/
 ├── sbudilnikom.ino
 ├── README.md
 └── docs/
-    ├── schematic-main.png
-    └── schematic-detailed.png
+    └── schematic-main.png
 ```
 
 ---
 
 # License / Ліцензія
-
-Додайте необхідну ліцензію для проєкту.
-
-Наприклад:
-
 ```text
 MIT License
 ```
