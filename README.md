@@ -11,8 +11,6 @@
 
 <!-- QUICK NAVIGATION -->
 <p align="center">
-  <a href="#-english">🇬🇧 English</a> •
-  <a href="#-українська">🇺🇦 Українська</a> •
   <a href="#hardware">🔧 Hardware</a> •
   <a href="#wiring-schematics">🔌 Schematics</a> •
   <a href="#required-libraries">📚 Libraries</a> •
