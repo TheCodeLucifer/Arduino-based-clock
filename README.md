@@ -11,6 +11,8 @@
 
 <!-- QUICK NAVIGATION -->
 <p align="center">
+  <a href="#-english">🇬🇧 English</a> •
+  <a href="#-українська">🇺🇦 Українська</a> •
   <a href="#hardware">🔧 Hardware</a> •
   <a href="#wiring-schematics">🔌 Schematics</a> •
   <a href="#required-libraries">📚 Libraries</a> •
@@ -84,61 +86,32 @@ The I2C pins depend on the Arduino board. On common Arduino boards such as the U
 ---
 
 <a id="wiring-schematics"></a>
+<a id="wiring-schematics"></a>
 # Wiring Schematics
 
-## Schematic 1 — Main Clock Circuit
+## Main Clock Circuit
 
-> **Insert the first wiring diagram here.**
-
-```text
-[ IMAGE: docs/schematic-main.png ]
-```
+> **Insert the wiring diagram here:** `docs/schematic-main.png`
 
 ### Component connection description
 
-Write the complete connection table here.
+| **Component** | **Pin** | **Arduino** |
+| ----------------------- | ------ | --- |
+| DS3231                  | VCC    | 5V  |
+| DS3231                  | GND    | GND |
+| DS3231                  | SDA    | A4  |
+| DS3231                  | SCL    | A5  |
+| LCD I2C                 | VCC    | 5V  |
+| LCD I2C                 | GND    | GND |
+| LCD I2C                 | SDA    | SDA |
+| LCD I2C                 | SCL    | SCL |
+| PLUS button             | Signal | D2  |
+| MINUS button            | Signal | D3  |
+| SELECT button           | Signal | D4  |
+| Buzzer                  | Signal | D5  |
+| Buzzer                  | GND    | GND |
 
-| Component | Pin | Arduino |
-|---|---|---|
-| DS3231 | VCC | 5V |
-| DS3231 | GND | GND |
-| DS3231 | SDA | SDA |
-| DS3231 | SCL | SCL |
-| LCD I2C | VCC | 5V |
-| LCD I2C | GND | GND |
-| LCD I2C | SDA | SDA |
-| LCD I2C | SCL | SCL |
-| PLUS button | Signal | D2 |
-| MINUS button | Signal | D3 |
-| SELECT button | Signal | D4 |
-| Buzzer | Signal | D5 |
-| Buzzer | GND | GND |
-
-**Note:** The buttons use Arduino's internal pull-up resistors (`INPUT_PULLUP`). The button should therefore connect the corresponding input pin to **GND when pressed**.
-
----
-
-## Schematic 2 — Alternative / Detailed Wiring
-
-> **Insert the second wiring diagram here.**
-
-```text
-[ IMAGE: docs/schematic-detailed.png ]
-```
-
-### Detailed connection description
-
-Add the complete explanation for the second schematic here.
-
-Describe:
-
-1. Power connections.
-2. I2C connections.
-3. Button connections.
-4. Buzzer connection.
-5. Any resistors or additional components.
-6. Ground connections.
-7. Any board-specific differences.
+**Note:** The buttons use Arduino's internal pull-up resistors (`INPUT_PULLUP`). Each button should connect the corresponding input pin to **GND when pressed**.
 
 ---
 
@@ -807,67 +780,31 @@ A5 → SCL
 
 ---
 
-# Схеми підключення
+# Схема підключення
 
-## Схема 1 — Основна схема годинника
+## Основна схема годинника
 
-> **Вставити першу схему підключення сюди.**
-
-```text
-[ IMAGE: docs/schematic-main.png ]
-```
+> **Вставити схему підключення сюди:** `docs/schematic-main.png`
 
 ### Опис підключення
 
-Тут буде розміщено повний опис того, який компонент до якого піна підключається.
+| **Компонент** | **Пін** | **Arduino** |
+| ----------------------- | ------ | --- |
+| DS3231                  | VCC    | 5V  |
+| DS3231                  | GND    | GND |
+| DS3231                  | SDA    | A4  |
+| DS3231                  | SCL    | A5  |
+| LCD I2C                 | VCC    | 5V  |
+| LCD I2C                 | GND    | GND |
+| LCD I2C                 | SDA    | SDA |
+| LCD I2C                 | SCL    | SCL |
+| PLUS button             | Signal | D2  |
+| MINUS button            | Signal | D3  |
+| SELECT button           | Signal | D4  |
+| Buzzer                  | Signal | D5  |
+| Buzzer                  | GND    | GND |
 
-| Компонент | Пін | Arduino |
-|---|---|---|
-| DS3231 | VCC | 5V |
-| DS3231 | GND | GND |
-| DS3231 | SDA | SDA |
-| DS3231 | SCL | SCL |
-| LCD I2C | VCC | 5V |
-| LCD I2C | GND | GND |
-| LCD I2C | SDA | SDA |
-| LCD I2C | SCL | SCL |
-| PLUS | Signal | D2 |
-| MINUS | Signal | D3 |
-| SELECT | Signal | D4 |
-| Buzzer | Signal | D5 |
-| Buzzer | GND | GND |
-
-Кнопки використовують внутрішні підтягувальні резистори Arduino:
-
-```cpp
-INPUT_PULLUP
-```
-
-Тому кнопка повинна з'єднувати відповідний цифровий пін Arduino із **GND при натисканні**.
-
----
-
-## Схема 2 — Детальна / альтернативна схема
-
-> **Вставити другу схему підключення сюди.**
-
-```text
-[ IMAGE: docs/schematic-detailed.png ]
-```
-
-### Опис схеми
-
-Тут буде розміщено повний опис другої схеми.
-
-Необхідно описати:
-
-1. Підключення живлення.
-2. Підключення SDA/SCL.
-3. Підключення кнопок.
-4. Підключення бузера.
-5. Додаткові резистори, якщо вони використовуються.
-6. Спільні GND.
-7. Відмінності для конкретної плати Arduino.
+**Примітка:** Кнопки використовують внутрішні підтягувальні резистори Arduino (`INPUT_PULLUP`). Кожна кнопка повинна з'єднувати відповідний цифровий пін Arduino із **GND при натисканні**.
 
 ---
 
